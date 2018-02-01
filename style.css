@@ -1,0 +1,27 @@
+body{
+  background-color: lightblue;
+
+}
+
+#game {
+  display: none;
+  background-color: lightblue;
+  font-style: verdana;
+  border-radius: 19px;
+  padding: 10px 13px,;
+  text-align: center;
+
+
+}
+
+h1{
+  font-family: "Open Sans", Helvetica, serif;
+  Font-weight: 800;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 13px;
+  border-radius: 19px;
+}
