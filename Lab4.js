@@ -24,11 +24,13 @@ var grant = {
 
 var userHealthBar = document.getElementById("userHealth");
 var grantHealthBar = document.getElementById("grantHealth");
-var userWins = document.getElementById("userWins");
+var userWins = document.getElementById("user.wins");
 var btn = document.getElementById("start-button");
 btn.onclick = function(){
   var showDiv = document.getElementById("game");
   showDiv.style.display = "block";
+  var hideDiv = document.querySelector(".startbutton")
+  hideDiv.style.display = "none"
 }
 
 var attackBtn = document.getElementById("attackbutton")
@@ -41,10 +43,10 @@ attackBtn.onclick = function(){
 if(grant.health <= 0){
   user.wins++;
   grant.health = 10;
-  console.log(user.wins);
-  console.log(grant.health);
+  
+
 }
-  updateDisplay();
+ updateDisplay();
 
 }
 var healBtn = document.getElementById("healbutton")
@@ -63,7 +65,7 @@ window.location.reload();
         userHealthBar.value = user.health;
         grantHealthBar.value = grant.health;
         userWins.value = user.wins;
-
+        console.log(user.wins);
 
     }
 

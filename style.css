@@ -24,4 +24,12 @@ button {
   color: white;
   padding: 10px 13px;
   border-radius: 19px;
+
+}
+
+.startbutton {
+  display: block;
+  position: static;
+  text-align: center;
+  padding: 20px 13px;
 }
